@@ -10,7 +10,7 @@ class App{
 		this.camera.position.set( 0, 0, 4 );
         
 		this.scene = new THREE.Scene();
-        this.scene.background = new THREE.Color( 0xaaaaaa );
+        this.scene.background = new THREE.Color( 0x000000 );
 
 		/*
 		const ambient = new THREE.HemisphereLight(0xffffff, 0xbbbbff, 0.3);
@@ -38,9 +38,9 @@ class App{
         const controls = new OrbitControls( this.camera, this.renderer.domElement );
         
         this.renderer.setAnimationLoop(this.render.bind(this));
-    
+    	*/
         window.addEventListener('resize', this.resize.bind(this) );
-		*/
+		
 	}	
     
     resize(){
@@ -54,8 +54,9 @@ class App{
 	render( ) {   
 		/*
         this.mesh.rotateY( 0.01 );
-        this.renderer.render( this.scene, this.camera );
 		*/
+        this.renderer.render( this.scene, this.camera );
+		
     }
 }
 
