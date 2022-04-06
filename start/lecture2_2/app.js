@@ -47,7 +47,7 @@ class App{
 
         //Add MrDwarf testing2
         const loader = new GLTFLoader(); 
-        loader.load( '../models/MrDwarf.glb', function ( gltf ) { scene.add( gltf.scene ); }, undefined, function ( error ) { console.error( error ); } );
+        loader.load( '../../models/MrDwarf.glb', function ( gltf ) { scene.add( gltf.scene ); }, undefined, function ( error ) { console.error( error ); } );
         
 
         //Orbital Controls
