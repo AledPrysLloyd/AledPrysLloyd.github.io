@@ -65,7 +65,7 @@ class App{
     }
     
 	render( ) {   
-        this.mesh.rotateY( 0.01 );
+        //this.mesh.rotateY( 0.01 );
         this.renderer.render( this.scene, this.camera );
     }
 }
