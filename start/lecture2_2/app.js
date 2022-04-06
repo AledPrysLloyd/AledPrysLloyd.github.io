@@ -45,7 +45,7 @@ class App{
         this.scene.add(this.mesh);
         */
 
-        //Add MrDwarf testing
+        //Add MrDwarf testing2
         const loader = new GLTFLoader(); 
         loader.load( '../models/MrDwarf.glb', function ( gltf ) { scene.add( gltf.scene ); }, undefined, function ( error ) { console.error( error ); } );
         
