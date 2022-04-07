@@ -29,6 +29,8 @@ class App{
         this.renderer.outputEncoding = THREE.sRGBEncoding;
         this.renderer.physicallyCorrectLights = true;
         container.appendChild( this.renderer.domElement );
+
+        
 		this.setEnvironment();
 		
         this.loadingBar = new LoadingBar();
@@ -79,7 +81,7 @@ class App{
                         child.material.metalness = 0.2;
                     }
                 })
-                self.chair = gltf.scene;
+                self.dwarf = gltf.scene;
                 
 				self.scene.add( gltf.scene );
                 
@@ -138,7 +140,7 @@ class App{
     }
     
 	render( ) {   
-        this.chair.rotateY( 0.01 );
+        this.dwarf.rotateY( 0.01 );
         this.renderer.render( this.scene, this.camera );
     }
 }
